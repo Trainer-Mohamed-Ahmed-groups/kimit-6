@@ -1,16 +1,18 @@
-import reactLogo from "./logo.svg";
 import './App.css';
+import Profile from './components/Profile';
+import {UserProfile} from './components/UserProfile';
+import TodoList from './components/test';
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <input type="text" />
-        <img src={reactLogo} alt="This is logo" />
-        Hello first app in react
-      </div>
-      <div className="test"></div>
-    </>
+    <div>
+      <Profile />
+      <hr />
+      <hr />
+      <UserProfile />
+      <hr />
+      <TodoList />
+    </div>
   );
 }
 
