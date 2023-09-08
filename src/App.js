@@ -1,24 +1,13 @@
 import './App.css';
-import DrinkList from './components/Challenge';
-import ConditionExample from './components/ConditionExample';
-// import CourseDetails from './components/CourseDetails';
-import Gallery from './components/Gallery';
-
+import DisplayNames from './components/DisplayNames';
+import DisplayRecipes from './components/DisplayRecipes';
+import Poem from './components/Poem';
 function App() {
   return (
     <div>
-      {/* <CourseDetails courseName="React course" courseDesc="SPA" test="test from one" />
-      <CourseDetails courseName="CSS course" courseDesc="Style sheet">
-        <p>This is p in css</p>
-        <p>This is p in css</p>
-      </CourseDetails> 
-
-      <Gallery />
-
-      <ConditionExample />
-      */}
-
-      <DrinkList />
+      {/* <DisplayNames /> */}
+      {/* <DisplayRecipes /> */}
+      <Poem />
     </div>
   );
 }
