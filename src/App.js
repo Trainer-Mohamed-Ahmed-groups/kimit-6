@@ -1,17 +1,24 @@
 import './App.css';
-import Profile from './components/Profile';
-import {UserProfile} from './components/UserProfile';
-import TodoList from './components/test';
+import DrinkList from './components/Challenge';
+import ConditionExample from './components/ConditionExample';
+// import CourseDetails from './components/CourseDetails';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
     <div>
-      <Profile />
-      <hr />
-      <hr />
-      <UserProfile />
-      <hr />
-      <TodoList />
+      {/* <CourseDetails courseName="React course" courseDesc="SPA" test="test from one" />
+      <CourseDetails courseName="CSS course" courseDesc="Style sheet">
+        <p>This is p in css</p>
+        <p>This is p in css</p>
+      </CourseDetails> 
+
+      <Gallery />
+
+      <ConditionExample />
+      */}
+
+      <DrinkList />
     </div>
   );
 }
