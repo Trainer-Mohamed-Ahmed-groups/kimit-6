@@ -1,0 +1,15 @@
+@import "./sass/components/homepage";
+
+body {
+    height: 5000px;
+
+    .app {
+        text-align: center;
+
+        .clickBtn {
+            font-weight: bold;
+            background-color: #4e4e4e;
+            color: #F00
+        }
+    }
+}
