@@ -1,22 +1,29 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import { Button } from 'react-bootstrap';
+import SiteNav from './layout/SiteNav';
 import About from './views/About';
 import Contacts from './views/Contacts';
+import Products from './views/Products';
+import Home from "./views/Home"
+import ProductView from './views/ProductView';
 function App() {
-  var username = "Ali";
 
-  let handleClick = () => {
-    console.log("OK")
-  }
 
   return (
     <div className="app">
-      Username : {username === "Ali" && "OK Ali"}
-      <Button onClick={handleClick}>Click me</Button>
+      <SiteNav />
 
-      <About />
-      <hr />
-      <Contacts />
+
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:productId" element={<ProductView />} />
+      </Routes>
+
+
+
     </div>
   );
 }

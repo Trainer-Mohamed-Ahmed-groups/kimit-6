@@ -1,5 +1,0 @@
-- Create a Products page
-- Create a bootstrap navbar 
-- Create a grid system container 4 columns every one column container a card 
-- All data in products page map on it and pass every product to a Card component as a prop
-- Every card is a separated component 
