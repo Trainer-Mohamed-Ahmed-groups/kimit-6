@@ -5,7 +5,6 @@ import About from './views/About';
 import Contacts from './views/Contacts';
 import Products from './views/Products';
 import Home from "./views/Home"
-import ProductView from './views/ProductView';
 function App() {
 
 
@@ -19,7 +18,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:productId" element={<ProductView />} />
       </Routes>
 
 

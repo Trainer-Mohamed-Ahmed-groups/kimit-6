@@ -1,25 +1,34 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react";
+import { useState } from "react"
+import { Container, Row } from "react-bootstrap";
 import SingleProduct from "../components/SingleProduct";
 
 export default function Products() {
 
     const [products, setProducts] = useState([]);
 
-    let getProducts = () => {
-        fetch("https://fakestoreapi.com/products").then(json => json.json()).then(res => setProducts(res))
+    let getAllProducts = () => {
+        fetch("http://localhost:2222/products")
+            .then(json => json.json())
+            .then(res => setProducts(res))
     }
 
     useEffect(() => {
-        getProducts()
+        getAllProducts()
     }, [])
+    // json-server -w src/data/db.json --port 2222
     return (
         <div>
             <h2>Products</h2>
-            {
-                products.map(product =>
-                    <SingleProduct key={product.id} productDetails={product} />
-                )
-            }
+            <Container>
+                <Row>
+                    {
+                        products.map(product =>
+                            <SingleProduct product={product} key={product.id} />
+                        )
+                    }
+                </Row>
+            </Container>
         </div>
     )
 }
